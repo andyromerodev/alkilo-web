@@ -1,0 +1,27 @@
+|-- application
+    |-- useCases
+        |-- houses
+            |-- filterHouses.ts
+            |-- getHouses.ts
+|-- core
+    |-- domain
+        |-- entities
+            |-- Houses.ts
+            |-- Pools.ts
+        |-- Repositories
+            |-- IHouseRepository.ts
+            |-- IPoolRepository.ts
+|-- infrastructure
+    |-- repositories
+        |-- SupabaseHouseRepository.ts
+        |-- SupabasePoolRepository.ts
+|-- presentation
+    |-- assets
+        |-- astro.svg
+        |-- background.svg
+    |-- components
+        |-- Welcome.astro
+    |-- layouts
+        |-- Layout.astro
+    |-- pages
+        |-- index.astro
