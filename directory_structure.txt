@@ -2,7 +2,7 @@
     |-- useCases
         |-- houses
             |-- filterHouses.ts
-            |-- getHouses.ts
+            |-- GetHousesUseCase.ts
 |-- core
     |-- domain
         |-- entities
@@ -11,10 +11,16 @@
         |-- Repositories
             |-- IHouseRepository.ts
             |-- IPoolRepository.ts
+|-- env.d.ts
 |-- infrastructure
+    |-- datasources
+        |-- IHouseDataSource.ts
+        |-- SupabaseHouseDataSource.ts
     |-- repositories
-        |-- SupabaseHouseRepository.ts
+        |-- HouseRepositoryImpl.ts
         |-- SupabasePoolRepository.ts
+|-- lib
+    |-- supabase.ts
 |-- presentation
     |-- assets
         |-- astro.svg
@@ -24,4 +30,5 @@
     |-- layouts
         |-- Layout.astro
     |-- pages
+        |-- houses.astro
         |-- index.astro
